@@ -349,7 +349,7 @@ tasks.register('buildOsmAndCore', Exec) {
 		if (flavour.length() > 0) {
 			environment "$flavour", "1"
 		}
-		commandLine "bash", file("./old-ndk-build.sh").getAbsolutePath()
+		commandLine "bash", file("./ndk-build.sh").getAbsolutePath()
 	} else {
 		commandLine "cmd", "/c", "echo", "Not supported"
 	}
